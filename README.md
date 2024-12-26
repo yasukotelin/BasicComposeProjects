@@ -1,0 +1,2 @@
+# BasicComposeProjects
+COMPOSE を用いた ANDROID アプリ開発の基礎のプロジェクト課題の模範解答用プロジェクト
