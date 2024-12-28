@@ -45,7 +45,7 @@ fun MainScreen(
                     .padding(horizontal = 16.dp),
                 verticalArrangement = Arrangement.spacedBy(16.dp),
             ) {
-                items(posts) { post ->
+                items(posts, key = { it.pictureResId }) { post ->
                     PostCard(post = post, modifier = Modifier.fillMaxWidth())
                 }
 
