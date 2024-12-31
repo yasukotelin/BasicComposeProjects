@@ -25,3 +25,14 @@
 <img src="./30DaysOfDiary/img/Screenshot_20241229_025817.png" width="240px" />
 <img src="./30DaysOfDiary/img/Screenshot_20241229_025852.png" width="240px" />
 </div>
+
+## ユニット4: My City アプリを作成する
+
+- サンプルコード: [MyCityApp](https://github.com/yasukotelin/BasicComposeProjects/tree/main/MyCityApp)
+- [プロジェクト課題ページ](https://developer.android.com/codelabs/basic-android-kotlin-compose-my-city?hl=ja&continue=https%3A%2F%2Fdeveloper.android.com%2Fcourses%2Fpathways%2Fandroid-basics-compose-unit-4-pathway-3%3Fhl%3Dja%23codelab-https%3A%2F%2Fdeveloper.android.com%2Fcodelabs%2Fbasic-android-kotlin-compose-my-city#0)
+
+<div>
+<img src="./MyCityApp/img/Screenshot_20241230_160741.png" width="220px" />
+<img src="./MyCityApp/img/Screenshot_20241230_160818.png" width="220px" />
+<img src="./MyCityApp/img/Screenshot_20241230_160853.png" width="220px" />
+</div>
