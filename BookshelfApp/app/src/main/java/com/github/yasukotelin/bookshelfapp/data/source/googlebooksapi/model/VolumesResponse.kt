@@ -1,6 +1,5 @@
-package com.github.yasukotelin.bookshelfapp.model
+package com.github.yasukotelin.bookshelfapp.data.source.googlebooksapi.model
 
-import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
@@ -26,7 +25,7 @@ data class BookItem(
 data class VolumeInfo(
     val title: String,
     val subtitle: String? = null,
-    val authors: List<String>,
+    val authors: List<String>? = null,
     val publisher: String? = null,
     val publishedDate: String? = null,
     val description: String? = null,
@@ -40,7 +39,7 @@ data class VolumeInfo(
     val maturityRating: String,
     val allowAnonLogging: Boolean,
     val contentVersion: String,
-    val panelizationSummary: PanelizationSummary,
+    val panelizationSummary: PanelizationSummary? = null,
     val imageLinks: ImageLinks? = null,
     val language: String,
     val previewLink: String,

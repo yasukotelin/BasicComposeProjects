@@ -38,6 +38,7 @@ android {
         jvmTarget = "11"
     }
     buildFeatures {
+        buildConfig = true
         compose = true
     }
 }
@@ -63,10 +64,14 @@ dependencies {
     implementation(libs.retrofit)
     implementation(libs.converter.kotlinx.serialization)
     implementation(libs.okhttp)
+    implementation(libs.logging.interceptor)
     // Hilt
     implementation(libs.hilt.android)
     kapt(libs.hilt.android.compiler)
     implementation(libs.androidx.hilt.navigation.compose)
+    // Coil
+    implementation(libs.coil.compose)
+    implementation(libs.coil.network.okhttp)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

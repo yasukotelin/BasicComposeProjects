@@ -1,12 +1,15 @@
 package com.github.yasukotelin.bookshelfapp.di
 
-import com.github.yasukotelin.bookshelfapp.data.source.GoogleBooksApi
+import com.github.yasukotelin.bookshelfapp.BuildConfig
+import com.github.yasukotelin.bookshelfapp.data.source.googlebooksapi.GoogleBooksApi
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import kotlinx.serialization.json.Json
 import okhttp3.MediaType.Companion.toMediaType
+import okhttp3.OkHttpClient
+import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.kotlinx.serialization.asConverterFactory
 import javax.inject.Singleton
@@ -17,8 +20,25 @@ object SourceModule {
 
     @Provides
     @Singleton
-    fun provideRetrofit(): Retrofit {
+    fun provideOkhttpClient(): OkHttpClient {
+        return OkHttpClient.Builder().addInterceptor(
+            HttpLoggingInterceptor().setLevel(
+                if (BuildConfig.DEBUG) {
+                    HttpLoggingInterceptor.Level.BODY
+                } else {
+                    HttpLoggingInterceptor.Level.NONE
+                }
+            )
+        ).build()
+    }
+
+    @Provides
+    @Singleton
+    fun provideRetrofit(
+        okHttpClient: OkHttpClient
+    ): Retrofit {
         return Retrofit.Builder()
+            .client(okHttpClient)
             .baseUrl("https://www.googleapis.com/books/v1/")
             .addConverterFactory(
                 Json.asConverterFactory(
