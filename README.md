@@ -83,3 +83,11 @@
 - ViewModel
 - StateFlow
 - データレイヤーを意識したパッケージ構成
+
+## ユニット６: Flight Search アプリを作成する
+
+**NOTE** 未実装
+
+- [サンプルコード]()
+- [プロジェクト課題ページ](https://developer.android.com/codelabs/basic-android-kotlin-compose-flight-search?hl=ja&continue=https%3A%2F%2Fdeveloper.android.com%2Fcourses%2Fpathways%2Fandroid-basics-compose-unit-6-pathway-3%3Fhl%3Dja%23codelab-https%3A%2F%2Fdeveloper.android.com%2Fcodelabs%2Fbasic-android-kotlin-compose-flight-search#0)
+
