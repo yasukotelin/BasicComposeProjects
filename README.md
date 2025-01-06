@@ -9,12 +9,23 @@
 
 <img src="./BusinessCardApp/img/Screenshot_20241228_002445.png" width="220px" />
 
+### サンプルコードのポイント
+
+- data classを使ったデータの表現
+- weightを活用したレイアウト実装
+
 ## ユニット2: アートスペース アプリを作成する
 
 - サンプルコード: [ArtSpaceApp](https://github.com/yasukotelin/BasicComposeProjects/tree/main/ArtSpaceApp)
 - [プロジェクト課題ページ](https://developer.android.com/codelabs/basic-android-kotlin-compose-art-space?hl=ja&continue=https%3A%2F%2Fdeveloper.android.com%2Fcourses%2Fpathways%2Fandroid-basics-compose-unit-2-pathway-3%3Fhl%3Dja%23codelab-https%3A%2F%2Fdeveloper.android.com%2Fcodelabs%2Fbasic-android-kotlin-compose-art-space#0)
 
 <img src="./ArtSpaceApp//img/Screen_recording_20241229_004034.gif" width="220px" />
+
+### サンプルコードのポイント
+
+- Composableを適切な粒度で実装
+- HorizontalPagerを活用した画像の表示
+- Animationを使ったfade切り替え
 
 ## ユニット3: 30 日間アプリの作成
 
@@ -25,6 +36,13 @@
 <img src="./30DaysOfDiary/img/Screenshot_20241229_025817.png" width="220px" />
 <img src="./30DaysOfDiary/img/Screenshot_20241229_025852.png" width="220px" />
 </div>
+
+### サンプルコードのポイント
+
+- Dark/Lightテーマの対応
+- LazyListを使った遅延読み込み表示
+- 折りたたみ表示
+- 画像パフォーマンスのためのCoilを使ったローカル画像の表示
 
 ## ユニット4: My City アプリを作成する
 
@@ -37,6 +55,14 @@
 <img src="./MyCityApp/img/Screenshot_20241230_160853.png" width="220px" />
 </div>
 
+### サンプルコードのポイント
+
+- Navigation composeを活用した画面遷移の実装
+- モデルの定義
+- Chat GPTを活用したテストデータの作成
+- 詳細画面のカルーセル表示（LazyRow）
+- kotlinx.serializableによる型安全な画面遷移
+
 ## ユニット5: Bookshelfアプリの作成
 
 - サンプルコード: [BookshelfApp](https://github.com/yasukotelin/BasicComposeProjects/tree/main/BookshelfApp)
@@ -46,7 +72,7 @@
 <img src="./BookshelfApp/img/Screenshot_20250105_011224.png" width="220px" />
 </div
 
-### Points
+### サンプルコードのポイント
 
 - グリット表示
 - Google Boooks APIを活用したAPI通信
@@ -57,5 +83,3 @@
 - ViewModel
 - StateFlow
 - データレイヤーを意識したパッケージ構成
-- navigation composeを使った画面遷移
-    - 理想はリスト表示と詳細表示だが画像表示だけでも結構大変だと思うので無しでOK
